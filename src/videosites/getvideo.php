@@ -1,5 +1,5 @@
 <?php
-namespace sites;
+namespace videosites;
 
 class getvideo{
     private $pathInfo = false;
