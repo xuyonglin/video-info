@@ -28,7 +28,10 @@ class getvideo{
         $newUrl = $this->youkuUrl . $vid;
         $vinfo = json_decode($this->_postDataCurl($newUrl), true);
         if(isset($vinfo['error'])){
-            return false;
+            return [
+                'error' => 1,
+                'info' => '没有视频信息',
+            ];
         }
         $reArr = [
             'video_id' => $vinfo['id'],
