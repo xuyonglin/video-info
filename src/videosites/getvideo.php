@@ -18,7 +18,10 @@ class getvideo{
             ];
         }
         $re = $this->$site($url);
-        return $re;
+        return [
+            'error' => 0,
+            'data' => $re,
+        ];
     }
     
     private function youku($url){
