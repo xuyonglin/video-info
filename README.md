@@ -23,3 +23,34 @@ $re = $m->processPage($url);
     "category": "电视剧"
     }
 
+
+
+Get video info from video sites, support youku yet
+===============================================
+
+Requirements
+------------
+
+At least php version 5.3 
+extensions: 
+openssl
+
+Installation
+------------
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+Either run
+
+add
+
+```json
+"xuyonglin/video-info": "dev-master"
+```
+
+to the require section of your composer.json.
+
+
+Configuration
+-------------
+nothing now
